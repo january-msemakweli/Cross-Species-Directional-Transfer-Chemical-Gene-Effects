@@ -1,0 +1,28 @@
+{
+  "title": "Directional transfer of chemical-gene effects from rodents to humans: analysis code and aggregate outputs",
+  "description": "Independence-guarded meta-analysis of rodent-to-human directional chemical-gene effects in the Comparative Toxicogenomics Database (CTD). Includes Python pipeline (Aims 0-4), derived effect-key table, Ensembl/NCBI conservation anchors, aggregate tables, figures, and manuscript LaTeX sources.",
+  "creators": [
+    {
+      "name": "Msemakweli, January G.",
+      "affiliation": "Department of Epidemiology, Johns Hopkins Bloomberg School of Public Health"
+    },
+    {"name": "Mohamed, Hussein"},
+    {"name": "Mapande, Iddi"},
+    {"name": "Punguti, Oscar"},
+    {"name": "Msacky, Nelson Joseph"},
+    {"name": "Chebyala, Amelia"},
+    {"name": "Protas, Edson"},
+    {"name": "Phillip, Shukrani"},
+    {"name": "Tesha, Novatus"}
+  ],
+  "keywords": [
+    "toxicogenomics",
+    "Comparative Toxicogenomics Database",
+    "cross-species extrapolation",
+    "new approach methodologies",
+    "reproducibility"
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open"
+}
