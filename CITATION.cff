@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software or reuse these analyses, please cite this work."
+title: "Directional transfer of chemical-gene effects from rodents to humans: an independence-guarded meta-analysis of the Comparative Toxicogenomics Database"
+authors:
+  - family-names: Msemakweli
+    given-names: January G.
+    email: jmsemak1@jh.edu
+    affiliation: "Department of Epidemiology, Johns Hopkins Bloomberg School of Public Health"
+  - family-names: Mohamed
+    given-names: Hussein
+  - family-names: Mapande
+    given-names: Iddi
+  - family-names: Punguti
+    given-names: Oscar
+  - family-names: Msacky
+    given-names: Nelson Joseph
+  - family-names: Chebyala
+    given-names: Amelia
+  - family-names: Protas
+    given-names: Edson
+  - family-names: Phillip
+    given-names: Shukrani
+  - family-names: Tesha
+    given-names: Novatus
+version: "1.0.0"
+date-released: "2026-08-01"
+license: MIT
+repository-code: "https://github.com/january-msemakweli/Cross-Species-Directional-Transfer-Chemical-Gene-Effects"
+keywords:
+  - toxicogenomics
+  - Comparative Toxicogenomics Database
+  - cross-species extrapolation
+  - new approach methodologies
+  - reproducibility
+type: software

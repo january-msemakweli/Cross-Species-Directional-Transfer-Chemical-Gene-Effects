@@ -1,0 +1,111 @@
+chem_name,gene_symbol,aspect,h_cons,rod_cons,h_inc,h_dec,rod_inc,rod_dec,h_pmids,rod_pmids,chem_class
+bisphenol A,RPL5,expression,-1,1,0,2,2,0,4,5,organic_pollutants
+Paraquat,GCLC,expression,-1,1,0,2,4,0,2,7,heterocyclic_organic
+Tetrachlorodibenzodioxin,ALPL,expression,1,-1,2,0,0,2,2,7,other
+Tetrachlorodibenzodioxin,IL33,expression,1,-1,2,0,0,2,2,7,other
+bisphenol A,ARL3,expression,1,-1,2,0,0,2,2,6,organic_pollutants
+bisphenol A,RPL22L1,expression,-1,1,0,2,2,0,3,5,organic_pollutants
+bisphenol A,RPL9,expression,-1,1,0,2,2,0,2,6,organic_pollutants
+Resveratrol,IGF1R,expression,-1,1,0,2,3,0,4,4,organic_pollutants
+Silicon Dioxide,LCN2,expression,-1,1,0,2,3,0,2,6,other
+bisphenol A,RPL13A,expression,-1,1,0,2,3,0,2,5,organic_pollutants
+bisphenol A,RPL7,expression,-1,1,0,2,2,0,3,4,organic_pollutants
+Cadmium Chloride,CTNNB1,expression,1,-1,2,0,0,3,2,5,other
+Tetrachlorodibenzodioxin,IGFBP6,expression,-1,1,0,2,3,0,3,4,other
+1-Methyl-4-phenylpyridinium,LDHA,expression,1,-1,2,0,0,3,1,5,heterocyclic_organic
+4-nonylphenol,BAX,expression,-1,1,0,2,2,0,2,4,organic_pollutants
+arsenite,IL6,expression,-1,1,0,2,3,0,2,4,metals_inorganic
+bisphenol A,MRPL52,expression,-1,1,0,2,2,0,2,4,organic_pollutants
+bisphenol A,MYO18A,expression,1,-1,2,0,0,2,2,4,organic_pollutants
+bisphenol A,TBRG4,expression,-1,1,0,2,2,0,3,3,organic_pollutants
+bisphenol A,UBE2E3,expression,-1,1,0,2,2,0,2,4,organic_pollutants
+Doxorubicin,MYC,expression,-1,1,0,2,2,0,4,2,organic_pollutants
+Nicotine,MMP2,expression,1,-1,2,0,0,2,4,2,heterocyclic_organic
+Silicon Dioxide,C5,expression,-1,1,0,2,2,0,3,3,other
+Silicon Dioxide,FGG,expression,-1,1,0,2,2,0,2,4,other
+Tretinoin,CCNA2,expression,-1,1,0,2,2,0,4,2,solvents_industrial
+Tretinoin,TGFB2,expression,1,-1,2,0,0,2,5,1,solvents_industrial
+Aldosterone,NR3C2,expression,1,-1,2,0,0,2,3,2,organic_pollutants
+Atrazine,FOS,expression,1,-1,2,0,0,2,1,4,heterocyclic_organic
+bisphenol A,ANP32A,expression,1,-1,2,0,0,2,2,3,organic_pollutants
+bisphenol A,ATAD3A,expression,-1,1,0,2,2,0,2,3,organic_pollutants
+bisphenol A,BAG2,expression,-1,1,0,2,3,0,2,3,organic_pollutants
+bisphenol A,EIF2S2,expression,-1,1,0,2,2,0,3,2,organic_pollutants
+bisphenol A,ESR2,methylation,-1,1,0,3,2,0,3,2,organic_pollutants
+bisphenol A,NEK7,expression,-1,1,0,2,2,0,2,3,organic_pollutants
+bisphenol A,NUP50,expression,-1,1,0,2,2,0,2,3,organic_pollutants
+bisphenol A,RPL34,expression,-1,1,0,2,2,0,3,2,organic_pollutants
+bisphenol A,TCOF1,expression,-1,1,0,2,2,0,3,2,organic_pollutants
+bisphenol A,TNFAIP2,expression,-1,1,0,2,2,0,2,3,organic_pollutants
+Cadmium Chloride,CDH2,expression,1,-1,2,0,0,2,3,2,other
+Hydrogen Peroxide,FOXO3,expression,1,-1,2,0,0,2,3,2,metals_inorganic
+Lipopolysaccharides,OCLN,expression,-1,1,0,2,2,0,3,2,other
+Acetaminophen,AFP,expression,-1,1,0,2,2,0,2,2,other
+Acetaminophen,GC,expression,-1,1,0,2,2,0,2,2,other
+Air Pollutants,ACTA2,expression,-1,1,0,2,2,0,1,3,other
+bisphenol A,ACOX3,expression,1,-1,2,0,0,2,2,2,organic_pollutants
+bisphenol A,CCT5,expression,-1,1,0,2,2,0,2,2,organic_pollutants
+bisphenol A,CDC123,expression,-1,1,0,2,2,0,2,2,organic_pollutants
+bisphenol A,EIF2S1,expression,-1,1,0,2,2,0,2,2,organic_pollutants
+bisphenol A,MCMBP,expression,-1,1,0,2,2,0,2,2,organic_pollutants
+bisphenol A,MPC2,expression,-1,1,0,2,2,0,2,2,organic_pollutants
+bisphenol A,RPL10,expression,-1,1,0,2,2,0,2,2,organic_pollutants
+bisphenol A,RPL27,expression,-1,1,0,2,2,0,2,2,organic_pollutants
+bisphenol A,RPS25,expression,-1,1,0,2,2,0,2,2,organic_pollutants
+bisphenol A,TMEM135,expression,1,-1,2,0,0,2,2,2,organic_pollutants
+bisphenol A,TMEM238,expression,-1,1,0,2,2,0,1,3,organic_pollutants
+bisphenol A,TSN,expression,-1,1,0,2,2,0,2,2,organic_pollutants
+bisphenol A,VPS52,expression,-1,1,0,2,2,0,2,2,organic_pollutants
+bisphenol S,HSD11B1,expression,1,-1,2,0,0,2,2,2,organic_pollutants
+Calcitriol,CEBPB,expression,1,-1,2,0,0,2,3,1,organic_pollutants
+Dibutyl Phthalate,GJA1,expression,1,-1,2,0,0,3,1,3,other
+Diethylhexyl Phthalate,PPARGC1A,expression,-1,1,0,2,3,0,1,3,other
+Endosulfan,CYP2E1,expression,-1,1,0,2,3,0,2,2,other
+Estradiol,ABCC2,expression,1,-1,2,0,0,3,1,3,organic_pollutants
+Estradiol,ISYNA1,expression,-1,1,0,2,2,0,2,2,organic_pollutants
+"Nanotubes, Carbon",ATOH8,expression,-1,1,0,2,2,0,2,2,metals_inorganic
+ochratoxin A,BBC3,expression,-1,1,0,2,2,0,2,2,heterocyclic_organic
+Oxygen,KEAP1,expression,-1,1,0,2,2,0,2,2,metals_inorganic
+Oxygen,PLIN2,expression,1,-1,2,0,0,3,2,2,metals_inorganic
+Silicon Dioxide,TNFSF13,expression,-1,1,0,2,2,0,2,2,other
+sodium arsenite,MAPK9,expression,-1,1,0,2,2,0,2,2,metals_inorganic
+sodium arsenite,VPS35,expression,-1,1,0,2,2,0,2,2,metals_inorganic
+Triclosan,BAX,expression,-1,1,0,2,3,0,2,2,organic_pollutants
+triptolide,ICAM1,expression,-1,1,0,2,2,0,1,3,organic_pollutants
+Troglitazone,ADIPOQ,expression,1,-1,2,0,0,2,2,2,other
+Valproic Acid,GSTA2,expression,-1,1,0,2,2,0,1,3,other
+1-Methyl-4-phenylpyridinium,CBS,expression,1,-1,2,0,0,2,1,2,heterocyclic_organic
+Air Pollutants,NFKBIA,expression,1,-1,2,0,0,2,2,1,other
+arsenite,CDKN2A,expression,-1,1,0,2,2,0,1,2,metals_inorganic
+Cadmium,ESR1,expression,-1,1,0,2,3,0,2,1,metals_inorganic
+Curcumin,POU5F1,expression,-1,1,0,2,2,0,1,2,organic_pollutants
+cypermethrin,APAF1,expression,1,-1,2,0,0,2,2,1,solvents_industrial
+Ethanol,CDH1,expression,-1,1,0,2,2,0,2,1,other
+gingerol,CCND1,expression,-1,1,0,2,2,0,2,1,organic_pollutants
+Methotrexate,SLC19A1,expression,-1,1,0,2,2,0,2,1,heterocyclic_organic
+mono-(2-ethylhexyl)phthalate,HSD3B1,expression,1,-1,2,0,0,2,1,2,other
+"Nanotubes, Carbon",FASN,expression,1,-1,2,0,0,2,2,1,metals_inorganic
+"Nanotubes, Carbon",SERPINB2,expression,-1,1,0,2,2,0,2,1,metals_inorganic
+Oxygen,PCNA,expression,-1,1,0,2,2,0,2,1,metals_inorganic
+Progesterone,CXCL1,expression,-1,1,0,2,2,0,1,2,organic_pollutants
+Quercetin,LEP,expression,1,-1,2,0,0,2,1,2,heterocyclic_organic
+Simvastatin,CFLAR,expression,-1,1,0,2,2,0,2,1,organic_pollutants
+Smoke,HSP90AA1,expression,-1,1,0,2,2,0,2,1,other
+sodium arsenite,EIF2AK3,expression,-1,1,0,2,2,0,1,2,metals_inorganic
+systhane,CYP7A1,expression,-1,1,0,2,2,0,1,2,other
+"7,8-Dihydro-7,8-dihydroxybenzo(a)pyrene 9,10-oxide",FOXO3,expression,1,-1,2,0,0,2,1,1,organic_pollutants
+Carbamazepine,PLA2G4A,expression,-1,1,0,2,2,0,1,1,heterocyclic_organic
+chrysin,HMOX1,expression,-1,1,0,2,2,0,1,1,heterocyclic_organic
+deoxynivalenol,DNMT3A,expression,-1,1,0,2,2,0,1,1,organic_pollutants
+Dextran Sulfate,SLCO2B1,expression,1,-1,2,0,0,2,1,1,other
+Dihydrotestosterone,AQP9,expression,-1,1,0,2,2,0,1,1,organic_pollutants
+Folic Acid,ABCG2,expression,1,-1,2,0,0,2,1,1,heterocyclic_organic
+Lipopolysaccharides,ABCG2,expression,-1,1,0,2,2,0,1,1,other
+"Nanotubes, Carbon",ESM1,expression,1,-1,2,0,0,2,1,1,metals_inorganic
+"Nanotubes, Carbon",NFKB2,expression,-1,1,0,2,2,0,1,1,metals_inorganic
+"Nanotubes, Carbon",STC2,expression,-1,1,0,2,2,0,1,1,metals_inorganic
+"Nanotubes, Carbon",TACSTD2,expression,-1,1,0,2,2,0,1,1,metals_inorganic
+Quercetin,CLDN4,expression,1,-1,2,0,0,2,1,1,heterocyclic_organic
+sulforaphane,BCL2,expression,-1,1,0,2,2,0,1,1,other
+titanium dioxide,FAM20A,methylation,1,-1,2,0,0,2,1,1,metals_inorganic
+Triclosan,ESR1,expression,-1,1,0,2,2,0,1,1,organic_pollutants

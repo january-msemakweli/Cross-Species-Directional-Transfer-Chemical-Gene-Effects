@@ -1,0 +1,32 @@
+# Local / generated
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Raw CTD bulk download (obtain from https://ctdbase.org/downloads/)
+data/
+
+# Optional large NCBI rebuild inputs (processed tables are committed)
+external_data/gene_orthologs.gz
+external_data/homologene.data
+
+# Internal working notes (not part of the public release)
+lit_journal_scout/
+EVALUATION_AND_JOURNALS.md
+PROPOSAL.md
+
+# LaTeX build artefacts
+latex_submission/*.aux
+latex_submission/*.log
+latex_submission/*.out
+latex_submission/*.spl
+latex_submission/*.fls
+latex_submission/*.fdb_latexmk
+latex_submission/*.synctex.gz
+*.build.txt

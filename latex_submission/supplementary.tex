@@ -1,0 +1,341 @@
+\documentclass[11pt]{elsarticle}
+
+\usepackage{graphicx}
+\graphicspath{{./}{../figures/}{figures/}}
+\usepackage{booktabs}
+\usepackage{amsmath,amssymb}
+\usepackage{longtable}
+\usepackage{url}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage[margin=2.4cm]{geometry}
+
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thesection}{S\arabic{section}}
+
+\begin{document}
+
+\begin{center}
+{\Large \textbf{Supplementary Material}}\\[6pt]
+{\large Directional transfer of chemical-gene effects from rodents to humans:
+an independence-guarded meta-analysis of the Comparative Toxicogenomics
+Database}
+\end{center}
+
+\vspace{4pt}
+
+\noindent This file contains the supplementary tables referenced in the main
+text. Unless stated otherwise, the analytic population is the primary set:
+chemical-gene-endpoint effect keys measured in both a human and a rodent
+context, with an unambiguous consensus direction in each species, and with
+disjoint supporting PubMed identifiers across species (n=40{,}779). Agreement is
+the probability that the human consensus direction equals the rodent consensus
+direction. Point estimates carry Wilson 95\% intervals; interval estimates
+labelled ``bootstrap'' resample chemicals (1{,}000 replications) to respect the
+nesting of effect keys within chemicals. All six figures referenced in this
+supplement appear in the main text (Figures 1-6).
+
+\vspace{6pt}
+
+\noindent \textbf{Contents.} The four headline comparisons (overall independent
+agreement, all pairs, shared-publication pairs, and the mouse-versus-rat
+within-rodent benchmark), with both Wilson and cluster-bootstrap intervals, are
+given in Table 1 of the main text and are not repeated here. The tables below
+provide the stratified and mechanistic detail that supports the main text.
+
+\begin{itemize}\itemsep2pt
+\item Table S1. Agreement by molecular endpoint.
+\item Table S2. Agreement by replication depth.
+\item Table S3. Agreement by chemical class.
+\item Table S4. Within-species directional inconsistency.
+\item Table S5. Variance decomposition of the agreement outcome (intraclass correlations).
+\item Table S6. Predictive modelling: grouped cross-validation, permutation importance, and leave-one-class-out generalisation.
+\item Table S7. External conservation anchor: agreement by protein-identity quartile.
+\item Table S8. External conservation anchor: cluster-robust trend, one-to-one orthology, and incremental predictive value.
+\item Table S9. Catalogue of independent cross-species directional conflicts.
+\end{itemize}
+
+\clearpage
+%=========================================================================
+\section{Stratified reproducibility}
+%=========================================================================
+
+\begin{table}[H]
+\small
+\centering
+\caption{Independent human-rodent directional agreement by molecular endpoint
+(primary set), ordered by sample size. Endpoints with fewer than 30 pairs are
+omitted. Methylation agreement is indistinguishable from its chance baseline.}
+\label{tab:s1}
+\begin{tabular}{lcccc}
+\toprule
+Molecular endpoint & n & Agreement & Bootstrap 95\% CI & Chance \\
+\midrule
+Expression & 36{,}986 & 60.8\% & 58.3-63.6 & 50.4\% \\
+Activity & 1{,}106 & 89.3\% & 87.2-91.2 & 50.8\% \\
+Methylation & 1{,}102 & 41.9\% & 37.1-64.4 & 40.9\% \\
+Phosphorylation & 744 & 81.5\% & 77.5-85.0 & 64.0\% \\
+Secretion & 286 & 85.7\% & 81.1-90.6 & 75.1\% \\
+Cleavage & 182 & 96.7\% & 94.2-98.9 & 95.7\% \\
+Response to substance & 144 & 75.0\% & 67.3-81.9 & 50.3\% \\
+Metabolic processing & 55 & 98.2\% & 94.2-100 & 98.2\% \\
+Abundance & 53 & 84.9\% & 73.2-95.4 & 71.2\% \\
+Uptake & 44 & 95.5\% & 89.1-100 & 95.5\% \\
+Transport & 40 & 92.5\% & 80.5-100 & 92.7\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\small
+\centering
+\caption{Independent directional agreement by replication depth, the minimum
+number of supporting publications per species. Agreement rises monotonically to
+determinism.}
+\label{tab:s2}
+\begin{tabular}{lccc}
+\toprule
+Minimum supporting reports per species & n & Agreement & Bootstrap 95\% CI \\
+\midrule
+1 & 38{,}135 & 60.7\% & 57.6-63.7 \\
+2 & 1{,}980 & 76.5\% & 70.1-84.9 \\
+3 & 374 & 90.6\% & 85.7-96.8 \\
+4 & 135 & 95.6\% & 92.6-98.4 \\
+5 & 60 & 100\% & 100-100 \\
+$\geq$6 & 95 & 100\% & 100-100 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\small
+\centering
+\caption{Independent directional agreement by coarse chemical class (MeSH
+chemical tree). The spread across classes is small, consistent with the
+near-zero chemical-class variance component in Table S5.}
+\label{tab:s3}
+\begin{tabular}{lccc}
+\toprule
+Chemical class & n & Agreement & Bootstrap 95\% CI \\
+\midrule
+Heterocyclic organic & 4{,}637 & 68.6\% & 63.3-74.3 \\
+Other & 15{,}263 & 63.3\% & 60.3-66.4 \\
+Solvents / industrial & 2{,}673 & 61.7\% & 58.4-69.6 \\
+Organic pollutants & 13{,}853 & 59.3\% & 54.2-67.8 \\
+Metals / inorganic & 4{,}336 & 59.1\% & 53.5-70.1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+%=========================================================================
+\section{Decomposition of non-agreement}
+%=========================================================================
+
+\begin{table}[H]
+\small
+\centering
+\caption{Within-species directional inconsistency. For keys curated more than
+once within a single species, the fraction that were internally ambiguous (the
+same chemical-gene-endpoint curated both up and down). This is a within-species
+reproducibility deficit that is present before any cross-species comparison.}
+\label{tab:s4}
+\begin{tabular}{lccc}
+\toprule
+Species & Keys curated & Keys curated $>$1 time & Internally ambiguous \\
+\midrule
+Human & 580{,}801 & 37{,}780 & 58.3\% \\
+Mouse & 380{,}904 & 30{,}685 & 54.5\% \\
+Rat & 299{,}647 & 22{,}840 & 65.9\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\small
+\centering
+\caption{Variance decomposition of the binary agreement outcome (primary set),
+as one-way intraclass correlation coefficients (ICC) by grouping factor. The ICC
+is the share of agreement variance attributable to differences between groups.
+Transferability localises to the specific chemical-gene pair; chemical class
+explains almost none of the variance.}
+\label{tab:s5}
+\begin{tabular}{lcc}
+\toprule
+Grouping factor & Groups & ICC \\
+\midrule
+Chemical-gene pair & 40{,}200 & 0.442 \\
+Molecular endpoint & 17 & 0.117 \\
+Gene & 11{,}949 & 0.068 \\
+Chemical & 1{,}477 & 0.046 \\
+Chemical class & 7 & 0.005 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent Human-specific divergence (main text, Figure 4A): human-versus-rodent
+directional disagreement was 38.0\% against a mouse-versus-rat disagreement
+ceiling of 33.8\%, an excess of 4.2 percentage points (cluster-bootstrap 95\% CI
+$-$1.1 to 10.9), not distinguishable from zero.
+
+\clearpage
+%=========================================================================
+\section{Predictive modelling}
+%=========================================================================
+
+\begin{table}[H]
+\small
+\centering
+\caption{Predicting directional transfer for unseen chemicals under grouped
+(by chemical) five-fold cross-validation, so that no chemical appears in both
+training and test folds. AUC, area under the ROC curve; AP, average precision;
+Brier, mean squared error of the predicted probability. The prevalence baseline
+predicts the overall agreement rate (62.0\%) for every effect.}
+\label{tab:s6}
+\begin{tabular}{lcccc}
+\toprule
+Model & AUC (mean $\pm$ SD) & AP & Brier \\
+\midrule
+Gradient boosting & 0.583 $\pm$ 0.025 & 0.725 & 0.231 \\
+Logistic regression & 0.562 $\pm$ 0.014 & 0.712 & 0.230 \\
+Prevalence baseline & 0.500 $\pm$ 0.000 & 0.620 & 0.236 \\
+\bottomrule
+\end{tabular}
+
+\vspace{8pt}
+
+\begin{tabular}{lc}
+\multicolumn{2}{l}{\textit{Permutation importance (gradient boosting; AUC drop when feature permuted)}} \\
+\toprule
+Feature & AUC drop \\
+\midrule
+Rodent consensus direction & 0.056 \\
+Gene promiscuity (log) & 0.037 \\
+Molecular endpoint & 0.021 \\
+Chemical promiscuity (log) & 0.016 \\
+Rodent supporting publications & 0.013 \\
+Rodent support (vote count) & 0.000 \\
+Gene pathway degree (log) & $-$0.001 \\
+Chemical class & $-$0.009 \\
+\bottomrule
+\end{tabular}
+
+\vspace{8pt}
+
+\begin{tabular}{lccc}
+\multicolumn{4}{l}{\textit{Leave-one-chemical-class-out generalisation (gradient boosting)}} \\
+\toprule
+Held-out class & n & AUC & Observed agreement \\
+\midrule
+Solvents / industrial & 2{,}673 & 0.610 & 61.7\% \\
+Heterocyclic organic & 4{,}637 & 0.604 & 68.6\% \\
+Metals / inorganic & 4{,}336 & 0.571 & 59.1\% \\
+Other & 15{,}263 & 0.564 & 63.3\% \\
+Organic pollutants & 13{,}853 & 0.511 & 59.3\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+%=========================================================================
+\section{External conservation anchor}
+%=========================================================================
+
+\noindent The anchor was pre-registered before modelling: human-rodent protein
+percent identity (Ensembl Compara, per-gene mean across mouse and rat) and
+one-to-one orthology (Ensembl and NCBI \texttt{gene\_orthologs}), all external to
+CTD. Coverage of the primary set was near-complete: 39{,}933 of 40{,}779 keys
+(97.9\%) carried an Ensembl identity value (median 87.5\%).
+
+\begin{table}[H]
+\small
+\centering
+\caption{Independent directional agreement by quartile of human-rodent protein
+identity. Agreement is flat across the full identity range.}
+\label{tab:s7}
+\begin{tabular}{lcccc}
+\toprule
+Identity quartile & Median identity & n & Agreement & Bootstrap 95\% CI \\
+\midrule
+Q1 (lowest) & 70.4\% & 9{,}987 & 63.0\% & 60.6-66.2 \\
+Q2 & 83.4\% & 9{,}987 & 61.8\% & 58.5-65.2 \\
+Q3 & 90.5\% & 9{,}976 & 62.9\% & 59.9-66.1 \\
+Q4 (highest) & 96.7\% & 9{,}983 & 60.5\% & 56.5-64.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\small
+\centering
+\caption{External-anchor association with directional transfer. The trend is a
+chemical-cluster-robust logistic regression of agreement on protein identity;
+the orthology rows are odds ratios contrasting one-to-one orthologs against all
+others. The incremental rows compare the Aim 3 gradient-boosting model with and
+without the two conservation features under the same grouped cross-validation,
+restricted to keys with a conservation value. All anchors are null.}
+\label{tab:s8}
+\begin{tabular}{lcc}
+\toprule
+Anchor / model & Estimate (95\% CI) & $p$ \\
+\midrule
+Protein identity, per +10 percentage points & OR 0.97 (0.94-1.00) & 0.07 \\
+Ensembl one-to-one orthology & OR 1.02 (0.96-1.09) & 0.49 \\
+NCBI one-to-one orthology & OR 0.92 (0.78-1.09) & 0.33 \\
+\midrule
+CTD-internal model & AUC 0.574 (SD 0.030) & -- \\
+CTD-internal + conservation & AUC 0.576 (SD 0.023) & -- \\
+Difference (paired across folds) & $\Delta$AUC +0.002 (SD 0.009) & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+%=========================================================================
+\section{Catalogue of independent cross-species conflicts}
+%=========================================================================
+
+\begin{table}[H]
+\small
+\centering
+\caption{Effect keys that are independently and repeatedly curated in
+\emph{opposite} directions in humans and rodents (disjoint supporting
+publications, unambiguous consensus in each species). These are candidate true
+species divergences or curation errors for targeted review. The direction column
+gives the human then rodent consensus; ``n PMIDs'' gives supporting publications
+on each side. A representative selection is shown; the complete catalogue is
+distributed with the analysis code.}
+\label{tab:s9}
+\begin{tabular}{llllcc}
+\toprule
+Chemical & Gene & Endpoint & Human / rodent & Human PMIDs & Rodent PMIDs \\
+\midrule
+Bisphenol A & RPL5 & expression & decrease / increase & 4 & 5 \\
+Paraquat & GCLC & expression & decrease / increase & 2 & 7 \\
+Dioxin (TCDD) & ALPL & expression & increase / decrease & 2 & 7 \\
+Dioxin (TCDD) & IL33 & expression & increase / decrease & 2 & 7 \\
+Bisphenol A & ARL3 & expression & increase / decrease & 2 & 6 \\
+Bisphenol A & RPL22L1 & expression & decrease / increase & 3 & 5 \\
+Bisphenol A & RPL9 & expression & decrease / increase & 2 & 6 \\
+Resveratrol & IGF1R & expression & decrease / increase & 4 & 4 \\
+Silicon dioxide & LCN2 & expression & decrease / increase & 3 & 6 \\
+Bisphenol A & RPL13A & expression & decrease / increase & 3 & 5 \\
+Bisphenol A & RPL7 & expression & decrease / increase & 2 & 4 \\
+Cadmium chloride & CTNNB1 & expression & increase / decrease & 2 & 5 \\
+Dioxin (TCDD) & IGFBP6 & expression & decrease / increase & 3 & 4 \\
+MPP$^{+}$ & LDHA & expression & increase / decrease & 1 & 5 \\
+4-Nonylphenol & BAX & expression & decrease / increase & 2 & 4 \\
+Arsenite & IL6 & expression & decrease / increase & 3 & 4 \\
+Bisphenol A & MYO18A & expression & increase / decrease & 2 & 4 \\
+Bisphenol A & TBRG4 & expression & decrease / increase & 3 & 3 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent The catalogue is enriched for intensively studied environmental
+chemicals (bisphenol A, dioxin, paraquat, cadmium) acting on ribosomal and
+stress-response genes, the regime in which high-throughput expression profiling
+produces the most context-dependent directional calls.
+
+\end{document}
